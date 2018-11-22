@@ -1,0 +1,18 @@
+page-bienvenida {
+  ion-content{
+    background-image: url(../assets/imgs/fondo_inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  #empezar_btn{
+    background-image: url(../assets/imgs/boton_inicio.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: -1px;
+    width: 101%;
+    height: 20%;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+  }
+}

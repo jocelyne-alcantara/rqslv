@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><span>Regla 8 a la 14</span>
+      <button ion-button="bar-button" id="siguiente" class='back-button show-back-button' ng-reflect-klass="back-button" ng-reflect-ng-class="back-button-ios" (click)="openReglas3()">
+        <ion-icon name='arrow-forward'></ion-icon>
+      </button>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="reglas">
+  <ion-img class='linea_color_top imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+  <ion-list>
+
+    <button ion-item *ngFor="let item of reglas" (click)="openR1(item)">
+      <ion-grid class='grid_btn_reglas' no-padding>
+        <ion-row>
+          <ion-col col-auto>
+            <ion-img class='icono_regla imgs' src="{{ item.src }}"></ion-img>
+          </ion-col>
+          <ion-col class='col {{item.primera_col}}'>
+            <p text-wrap>{{ item.btn_numero }}</p>
+          </ion-col>
+          <ion-col class='col {{item.segunda_col}}'>
+            <p text-wrap>{{ item.btn_txt }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <button ion-button class='btn_volver' navPop>
+      <ion-icon name='ios-arrow-back'></ion-icon>
+      <span></span>
+      <p>VOLVER</p>
+    </button>
+    <button ion-button class='btn_sig' (click)="openReglas3()">
+      <p>SIGUIENTE</p>
+      <span></span>
+      <ion-icon name='ios-arrow-forward'></ion-icon>
+    </button>
+
+    <ion-footer class='linea_color_bottom_reglas'>
+        <ion-img class='imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+    </ion-footer>
+
+  </ion-list>
+
+</ion-content>

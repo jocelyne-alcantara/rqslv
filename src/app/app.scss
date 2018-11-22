@@ -1,0 +1,151 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.header-md::after{
+  height: 0 !important;
+}
+.toolbar-title, .back-button, .reglas .r1{
+  color: #326dbb !important;
+  text-align: center;
+}
+.reglas button, .toolbar-background{
+  background-color: #CAE5F8;
+}
+.item.activated{
+  background-color: #b2dfff !important;
+}
+.imgs{
+  background-color: transparent !important;
+  min-height: 4px ;
+}
+.codelco_logo{
+  width: 15%;
+  height: 20%;
+  top: 0;
+}
+.linea_color_bottom_reglas{
+  position: sticky !important;
+  bottom: -13px;
+  max-height: 0;
+}
+.ios .linea_color_bottom_reglas{
+  bottom: -12px;
+}
+page-reglas2 .linea_color_top, page-reglas3 .linea_color_top, page-creditos .linea_color_top{
+  top: 0;
+}
+#empezar_btn, .linea_color_top, .linea_color_bottom, .linea_color_bottom_reglas .imgs{
+  width: 100%;
+  left: 0;
+}
+#empezar_btn{
+  bottom: 0;
+}
+.linea_color_bottom{
+  bottom: -1px;
+}
+#empezar_btn, .codelco_logo, .linea_color_top, .linea_color_bottom, .linea_color_bottom_reglas .imgs{
+  position: absolute;
+  z-index: 1;
+}
+.p_aplicacion_creditos{
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  margin-top: 45%;
+}
+ion-list{
+  margin: -16px !important;
+}
+.reglas, #header_regla1{
+  background-color: #DCE9F2;
+}
+page-creditos ion-content, page-aplicacion ion-content{
+  background-color: #2B6BB3 !important;
+}
+//------paginas REGLAS-------
+.list-md .item-block .item-inner,.list-wp .item-block .item-inner {
+  border-bottom: 0.55px solid #c8c7cc !important;
+}
+.reglas .grid_btn_reglas{
+  background-color: #575756;
+  border-radius: 10px;
+}
+.reglas .grid_btn_reglas p, .segment-button{
+  color: #fff !important;
+}
+.reglas .grid_btn_reglas p, .reglas .btn_sig, .btn_sig .activated, .reglas .btn_volver, .btn_volver .activated, .reglas .r1, .segment-button{
+  font-weight: bold !important;
+}
+.reglas ion-col, .segment-button{ //alinear al centro verticalmente
+  display: flex!important;
+  align-items: center!important;
+}
+.reglas .icono_regla{
+  contain: content;
+}
+.reglas ion-col:nth-child(2) p{
+  font-size: 3em;
+  letter-spacing: -5px;
+}
+.reglas ion-col:nth-child(3) p{
+  padding:  0 0 0 8px;
+  font-size: 62%;
+}
+.reglas .btn_sig, .btn_sig .activated, .reglas .btn_volver, .btn_volver .activated{
+  background-color: transparent !important;
+  color: #575756;
+  font-size: 1.3em;
+  box-shadow: none !important;
+  text-shadow: 2px 2px #B4C8FA;
+  margin: 1rem 0.7rem -1rem 0.2rem;
+}
+.reglas .btn_sig{
+  float: right;
+}
+.reglas .btn_volver{
+  float: left;
+}
+.reglas .btn_sig span{
+  margin-right: 5px;
+}
+.reglas .btn_volver span{
+  margin-left: 5px;
+}
+.reglas .button-ios.activated, .button-md.activated{
+  text-shadow: 0 0 #B4C8FA !important;
+}
+.reglas .grid_btn_reglas ion-col:nth-child(1){
+  width: 23% !important;
+}
+.col-1{
+  width: 8.33333%;
+  max-width: 8.33333%;
+}
+.col-2{
+  width: 16.66667%;
+  max-width: 16.66667%;
+}
+.col-7{
+  width: 58.33333%;
+  max-width: 58.33333%;
+}
+.col-8{
+  width: 66.66667%;
+  max-width: 66.66667%;
+}
+
+//------fin paginas REGLAS-------

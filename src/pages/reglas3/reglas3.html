@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Regla 15 a la 22</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="reglas">
+  <ion-img class='linea_color_top imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+  <ion-list>
+
+    <button ion-item *ngFor="let item of reglas" (click)="openR1(item)">
+      <ion-grid class='grid_btn_reglas' no-padding>
+        <ion-row>
+          <ion-col col-auto>
+            <ion-img class='icono_regla imgs' src="{{ item.src }}"></ion-img>
+          </ion-col>
+          <ion-col col-2>
+            <p text-wrap>{{ item.btn_numero }}</p>
+          </ion-col>
+          <ion-col col-7>
+            <p text-wrap>{{ item.btn_txt }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <button ion-button class='btn_volver' navPop>
+      <ion-icon name='ios-arrow-back'></ion-icon>
+      <span></span>
+      <p>VOLVER</p>
+    </button>
+
+    <ion-footer class='linea_color_bottom_reglas'>
+        <ion-img class='imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+    </ion-footer>
+
+  </ion-list>
+
+</ion-content>

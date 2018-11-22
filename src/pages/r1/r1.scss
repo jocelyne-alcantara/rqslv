@@ -1,0 +1,115 @@
+page-r1 {
+  //------paginas R1-------
+  .item_warning{
+    background-color: #E31516 !important;
+  }
+  .r1, .supervisor_operador{
+    padding-left: 0 !important;
+  }
+  .r1 .item-inner{
+    border-bottom: none !important;
+  }
+  .r1 .label{
+    margin: 10px 0px 0px 0 !important;
+  }
+  .r1 .icon{
+    font-size: 2.6em !important;
+    color: #ffdf3b;
+    text-shadow: 0px 0px 10px #0e0e0e;
+  }
+  .r1 [col-2], .r1 .item-inner, .segment-button{
+    padding: 0px !important;
+  }
+  .txt p{
+    font-size: 0.78em;
+  }
+  .txt p:nth-child(1){
+    color: #575756;
+  }
+  .txt p:nth-child(2){
+    color: #2E6CB2;
+  }
+  .segment, .select_tab{
+    margin-top: 1em;
+  }
+  .segment, .supervisor_operador{
+    width: 104% !important;
+    margin-left: -2%;
+  }
+  .segment-button, .segment-button p{
+    line-height: normal !important;
+  }
+  .segment-button{
+    height: 4em !important;
+    opacity: 1 !important;
+    border-radius: 20px 20px 0 0 !important;
+    border: none !important;
+  }
+  .segment-button:nth-child(1), .supervisor .fila2{
+    background-color: #2C6CB4 !important;
+  }
+  .segment-button:nth-child(2), .operador .fila2{
+    background-color: #449FD8 !important;
+  }
+  .segment-activated{
+    box-shadow: 0 0 1rem #575756;
+    z-index: 1;
+  }
+  .segment-button p,.supervisor_operador p{
+    font-size: 1.2rem !important;
+  }
+  .segment-button p{
+    margin: 0px !important;
+    text-transform: none;
+  }
+  .supervisor_operador{
+    padding-right: 0;
+    font-weight: bold;
+  }
+
+  .supervisor_operador p{
+    letter-spacing: normal !important;
+    color: #fff;
+    font-size: bold;
+  }
+  .supervisor, .operador{
+    padding: 5px 0px 0px 0;
+  }
+  .titulo, .fila1, .fila2{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 5px;
+  }
+  .titulo, .fila1{
+    background-color: #575756;
+  }
+  .titulo, .fila2, .select_tab{
+    text-align: center !important;
+  }
+  .titulo{
+    border-radius: 5px 5px 0 0;
+  }
+  .primera{
+    border-radius: 5px 0 0 0;
+  }
+  .ultima{
+    border-radius: 0 0 0 5px;
+  }
+  .fila1{
+    border-right: 5px solid #dce9f2;
+  }
+  .select_tab{
+    color: #9E9E9E;
+  }
+  .select_tab .icon{
+    font-size: 2.3em;
+  }
+  .select_tab p{
+    margin-top: 0;
+  }
+  .regla_especial{
+    font-weight: 100;
+    font-style: oblique;
+  }
+  //------fin paginas R1-------
+}

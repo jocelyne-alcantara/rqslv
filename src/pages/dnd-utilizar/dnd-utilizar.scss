@@ -1,0 +1,50 @@
+page-dnd-utilizar {
+  .scroll-content{
+    padding: 0 !important;
+  }
+  .list-header{
+    border-top: none;
+  }
+  p, ion-icon{
+    color: #2B6CB4 !important;
+    font-weight: bold !important;
+  }
+  .img_top, .img_bottom{
+    width: 100%;
+    min-height: 4.5em;
+    left: 0;
+  }
+  .img_top{
+    position: absolute;
+  }
+  .img_bottom{
+    position: relative;
+    bottom: -4px;
+  }
+  ion-list{
+    padding: 6em 15px 10px 15px;
+  }
+  #titulo{
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .item p{
+    font-size: 1.4rem !important;
+    letter-spacing: normal !important;
+  }
+  .item .label{
+    margin: 0px 8px 0px 0;
+  }
+  .col{
+    align-items: start !important;
+  }
+  .btn_volver p, .btn_volver ion-icon{
+    color: #575756 !important;
+  }
+  .btn_volver{
+    left: 30% !important;
+  }
+  .list-md .item-block .item-inner, .list-wp .item-block .item-inner {
+    border-bottom: none !important;
+  }
+}

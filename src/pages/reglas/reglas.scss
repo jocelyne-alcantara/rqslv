@@ -1,0 +1,45 @@
+page-reglas {
+  #header_regla1{
+    text-align: center;
+  }
+  #header_regla1{
+    padding-top: 6px;
+  }
+  #header_regla1 p{
+    line-height: 1;
+  }
+  .linea_color_top{
+    bottom: 0 !important;
+  }
+  .primera{
+    color: #326DBB;
+    font-size: 1.8em;
+  }
+  .segunda, .cuarta{
+    padding-bottom: 5px !important;
+  }
+  .segunda{
+    color: #3896D4;
+  }
+  .cuarta, .tercera{
+    color: #398BC7;
+  }
+  .primera, .segunda, .tercera, #donde_utilizarlas p, .grid_btn_reglas p{
+    font-weight: bold;
+  }
+  .segunda, .tercera, .cuarta{
+    font-size: 1em;
+  }
+  #donde_utilizarlas p{
+    color:#276EAE;
+    font-size: 1.1em;
+  }
+  #donde_utilizarlas .imgs{
+    min-width: 100%;
+    contain: content;
+    margin-left: 1em;
+  }
+  #donde_utilizarlas .imgs img{
+    height: 1.8em;
+  }
+}

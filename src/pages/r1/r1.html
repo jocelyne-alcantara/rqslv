@@ -1,0 +1,82 @@
+<ion-content padding class="reglas">
+
+  <ion-item class="reglas r1">
+    <ion-grid class='grid_btn_reglas item_warning'>
+      <ion-row>
+        <ion-col col-10>
+          <p text-wrap>{{item.peligro}}</p>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon name="md-warning"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+  <ion-item class="reglas r1">
+    <ion-grid class='grid_btn_reglas' no-padding>
+      <ion-row>
+        <ion-col col-auto>
+          <ion-img class='icono_regla imgs' src="{{item.src}}"></ion-img>
+        </ion-col>
+        <ion-col class='col {{item.primera_col}}'>
+          <p text-wrap>{{item.btn_numero}}</p>
+        </ion-col>
+        <ion-col class='col {{item.segunda_col}}' style="text-align: initial;">
+          <p text-wrap>{{ item.btn_txt }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+
+  <ion-item class="reglas r1 txt">
+    <p text-wrap>CONTROLES CRÍTICOS</p>
+    <p text-wrap>PREGUNTAS DE VERIFICACIÓN DE LOS CONTROLES</p>
+  </ion-item>
+
+  <ion-segment class="segment-ios" [(ngModel)]="supervisor_operador">
+    <ion-segment-button value="supervisor" (click)="hide_select_tab()">
+      <p text-wrap>Supervisor y mando de primera línea</p>
+    </ion-segment-button>
+    <ion-segment-button value="operador" (click)="hide_select_tab()">
+      <p text-wrap>Operador, mantenedor y personal operativo en general</p>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="supervisor_operador" class="supervisor_operador">
+    <ion-grid *ngSwitchCase="'supervisor'" class="supervisor">
+      <ion-row *ngFor="let subItem of supervisor_preguntas">
+        <ion-col col-4 class="{{subItem.class_fila1}}">
+          <p text-wrap>{{subItem.p_fila1}}</p>
+        </ion-col>
+        <ion-col col-8 class="{{subItem.class_titulo_fila2}}">
+          <p text-wrap>{{subItem.p_titulo_fila2}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid *ngSwitchCase="'operador'" class="operador">
+      <ion-row *ngFor="let subItem of operador_preguntas">
+        <ion-col col-4 class="{{subItem.class_fila1}}">
+          <p text-wrap>{{subItem.p_fila1}}</p>
+        </ion-col>
+        <ion-col col-8 class="{{subItem.class_titulo_fila2}}">
+          <p text-wrap>{{subItem.p_titulo_fila2}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="select_tab" class="select_tab">
+    <ion-icon name="md-arrow-round-up"></ion-icon>
+    <p>Selcciona el rol que te corresponde</p>
+  </div>
+
+  <button ion-button class='btn_volver' navPop style="left: 25%;">
+    <ion-icon name='ios-arrow-back'></ion-icon>
+    <span></span>
+    <p>VOLVER</p>
+  </button>
+  <ion-footer class='linea_color_bottom_reglas'>
+      <ion-img style="width: 110%;left: -5%;" class='imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+  </ion-footer>
+
+</ion-content>

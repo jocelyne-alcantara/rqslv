@@ -1,0 +1,54 @@
+<ion-content padding class="reglas">
+
+  <ion-list>
+
+    <ion-item id="header_regla1" style="border-top:none;">
+      <p class="primera">REGLAS</p>
+      <p class="segunda">QUE SALVAN LA VIDA</p>
+      <p class="tercera">CONTROLES CRÍTICOS DE TERRENO</p>
+      <p class="cuarta">SUPERVISORES Y OPERADORES</p>
+      <ion-img class='linea_color_top imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+    </ion-item>
+
+    <button id="donde_utilizarlas" ion-item (click)="openDndUtilizar()">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-10>
+            <p>¿Dónde podremos utilizarlas?</p>
+          </ion-col>
+          <ion-col col-2>
+            <ion-img class='imgs' src="../assets/imgs/lista.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <button ion-item *ngFor="let item of reglas" (click)="openR1(item)">
+      <ion-grid class='grid_btn_reglas' no-padding>
+        <ion-row>
+          <ion-col col-auto>
+            <ion-img class='icono_regla imgs' src="{{ item.src }}"></ion-img>
+          </ion-col>
+          <ion-col col-1>
+            <p text-wrap>{{ item.btn_numero }}</p>
+          </ion-col>
+          <ion-col col-8>
+            <p text-wrap>{{ item.btn_txt }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <button ion-button class='btn_sig' (click)="openReglas2()">
+      <p>SIGUIENTE</p>
+      <span></span>
+      <ion-icon name='ios-arrow-forward'></ion-icon>
+    </button>
+
+    <ion-footer class='linea_color_bottom_reglas'>
+        <ion-img class='imgs' src="../assets/imgs/linea_colores.png"></ion-img>
+    </ion-footer>
+
+  </ion-list>
+
+</ion-content>
